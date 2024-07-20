@@ -38,7 +38,10 @@ const Header = () => {
           />
           <AiOutlineSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
         </form>
-        <Link to="sign-in" className="inline-block text-white font-bold py-2 px-4 rounded-lg transition duration-300 bg-gradient-to-r from-purple-900 to-blue-500 hover:from-purple-600 hover:to-blue-600">
+        <Link
+          to="sign-in"
+          className="inline-block text-blue-500 border border-blue-500 font-bold py-2 px-4 rounded-lg transition duration-300 hover:bg-blue-500 hover:text-white"
+        >
           Sign In
         </Link>
       </div>
