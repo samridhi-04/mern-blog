@@ -8,6 +8,7 @@ import Projects from "./pages/Projects";
 
 import Header1 from "./Components/Header1";
 import FooterCom from "./Components/FooterCom";
+import PrivateRoute from "./Components/PrivateRoute";
 const App = () => {
   return (
     <BrowserRouter>
@@ -18,7 +19,9 @@ const App = () => {
       <Route path="/about" element={<About/>}/>
       <Route path="/sign-in" element={<SignIn/>}/>
       <Route path="/sign-up" element={<SignUp/>}/>
+      <Route element={<PrivateRoute/>}>
       <Route path="/dashboard" element={<DashBoard/>}/>
+      </Route>
       <Route path="/projects" element={<Projects/>}/>
     </Routes>
     <FooterCom/>
